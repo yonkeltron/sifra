@@ -6,8 +6,10 @@ export interface Props {
 const {prompt} = Astro.props;
 ---
 
-<aside>
-  <small>{prompt}</small><br />
+<section>
+  <aside>
+    <small>{prompt}</small><br />
   
-  <slot />
-</aside>
+    <slot />
+  </aside>
+</section>
