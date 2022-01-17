@@ -1,0 +1,22 @@
+---
+import {Choices, Choice, SifraLayout} from "sifra";
+---
+
+<SifraLayout title="Exploring Sifra's components">
+
+<p>The most important thing to understand about Sifra's components is that they're configured with sensible defaults. For example, right now they are comprised of semantic markup styled with <a href="https://andybrewer.github.io/mvp/">MVP.css</a>.</p>
+
+<h4><code>SifraLayout</code></h4>
+
+<p>In order to get sections to look and behave properly, you'll want to enclose all of your content in the <code>SifraLayout</code> component.</p>
+
+<h4><code>Choices</code> and <code>Choice</code></h4>
+
+<p>Following the meat every section should conclude with a selection of next actions, which is where the <code>Choices</code> and <code>Choice</code> components feature.</p>
+
+<Choices title="Keep going">
+  <Choice title="Learn about styling content" slug="styling_content" />
+  <Choice title="See some examples" slug="examples" />
+</Choices>
+
+</SifraLayout>

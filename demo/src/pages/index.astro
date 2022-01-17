@@ -1,17 +1,19 @@
 ---
-import {Aside, Choices, Choice, SifraLayout, Source} from "sifra";
+import {Choices, Choice, SifraLayout} from "sifra";
 ---
 
-<SifraLayout title="Test">
-	<p>Amy is smarter.</p>
+<SifraLayout title="Introducing Sifra">
+	<p>I could never get the hang of writing tutorials because they always seemed too stilted for my liking. My fear was that they'd be boring. That was when I discovered Interactive Fiction tools like <a href="https://twinery.org">Twine</a> and <a href="https://github.com/inkle/ink">Inkle's Ink language</a>. While these were excellent steps forward, doing basic stuff like including syntax-highlighted code or images was a non-trivial undertaking.</p>
 
-	<Source path="package.json" lang="json" />
+	<p>And so, I came and thought up Sifra, from the Aramaic word for "book" or "scroll".</p>
 
-	<Aside title="See what happens when you run it...">
-		<Source path="package.json" lang="json" />
-	</Aside>
+	<p>Right now, Sifra is an <a href="https://astro.build">Astro</a> component library for writing interactive tutorials but I'd like to evolve it into a document format as well! This would allow folks to use familiar tools like HTML to write content and then just have it compile to Astro pages during the build process.</p>
+
+	<p>In the meantime, passages or story units are just astro pages.</p>
+
+	<p>The new document format is a bit farther down the road but the components are coming along nicely and feel ready for testing!</p>
 
 	<Choices prompt="Learn more:">
-		<Choice title="Explore components" slug="explore_components" />
+		<Choice title="Explore the Sifra components" slug="explore_components" />
 	</Choices>
 </SifraLayout>
