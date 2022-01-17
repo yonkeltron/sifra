@@ -1,0 +1,8 @@
+{
+  "name": "sifra-dev",
+  "workspaces": [
+    "demo",
+    "packages/*"
+  ],
+  "private": true
+}

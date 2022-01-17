@@ -1,0 +1,15 @@
+---
+export interface Props {
+  lang: string;
+  path: string;
+}
+
+import { Code } from "astro/components";
+import fs from 'node:fs/promises';
+
+const {lang, path} = Astro.props;
+
+const contents = await fs.readFile(path, 'utf-8');
+---
+
+<Code lang={lang} code={contents} />

@@ -1,0 +1,17 @@
+---
+import {Aside, Choices, Choice, SifraLayout, Source} from "sifra";
+---
+
+<SifraLayout title="Test">
+	<p>Amy is smarter.</p>
+
+	<Source path="package.json" lang="json" />
+
+	<Aside title="See what happens when you run it...">
+		<Source path="package.json" lang="json" />
+	</Aside>
+
+	<Choices prompt="Learn more:">
+		<Choice title="Explore components" slug="explore_components" />
+	</Choices>
+</SifraLayout>

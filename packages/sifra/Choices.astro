@@ -1,0 +1,13 @@
+---
+export interface Props {
+  prompt: string;
+}
+
+const {prompt} = Astro.props;
+---
+
+<aside>
+  <small>{prompt}</small><br />
+  
+  <slot />
+</aside>

@@ -1,0 +1,16 @@
+---
+export interface Props {
+	path: string;
+}
+
+import Processor from 'asciidoctor';
+import fs from 'node:fs/promises';
+
+const {path} = Astro.props;
+
+const content = await fs.readFile(path, 'utf-8');
+const processor = Processor();
+const html = processor.convert(content);
+---
+
+{html}

@@ -1,0 +1,30 @@
+{
+  "name": "sifra",
+  "description": "A toolkit for writing interactive tutorials",
+  "version": "0.3.0",
+  "type": "module",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "license": "MIT",
+  "files": [
+    "astro.config.mjs",
+    "README.md",
+    "index.ts",
+    "AsciiDoctor.astro",
+    "Aside.astro",
+    "Choice.astro",
+    "Choices.astro",
+    "SifraLayout.astro",
+    "Source.astro"
+  ],
+  "keywords": [
+    "astro-component",
+    "interactive fiction",
+    "interactive tutorial"
+  ],
+  "dependencies": {
+    "asciidoctor": "^2.2.5",
+    "astro": "^0.22.13"
+  }
+}
